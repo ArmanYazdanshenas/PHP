@@ -21,17 +21,13 @@ function RestFunction(...$nums){
     }
     return $sum;
 }
+$name = 'arman yazdanshenas';
+function PrintName(){
+    global $name;
+    echo $name;
+}
 
-
-test();
-echo "<br />";
-$result = FuncRes(12,9);
-var_dump($result);
-var_dump(count($result));
-
-$my_list = [1,2,3,4,5,6,7,8,9,10];
-echo "<br />";
-var_dump(RestFunction(...$my_list));
+PrintName();
 
 
 ?>
