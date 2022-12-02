@@ -25,7 +25,16 @@ $name = 'arman yazdanshenas';
 function PrintName(){
     global $name;
     echo $name;
+    $name = 'Arman Yazdanshenas';
 }
+
+function func_test_static(){
+    static $age = 0;
+    echo $age;
+    $age++;
+}
+
+
 ?>
 
 <!doctype html>
