@@ -26,10 +26,6 @@ function PrintName(){
     global $name;
     echo $name;
 }
-
-PrintName();
-
-
 ?>
 
 <!doctype html>
