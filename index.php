@@ -28,13 +28,17 @@ function PrintName(){
     $name = 'Arman Yazdanshenas';
 }
 
-function func_test_static(){
+function func_test_static()
+{
     static $age = 0;
     echo $age;
     $age++;
 }
 
-
+$sum = function ($a,$b){
+    return $a+$b;
+};
+var_dump($sum(4,5));
 ?>
 
 <!doctype html>
