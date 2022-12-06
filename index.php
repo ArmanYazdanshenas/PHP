@@ -39,6 +39,25 @@ $sum = function ($a,$b){
     return $a+$b;
 };
 var_dump($sum(4,5));
+
+$c=10;
+$sum = function ($a,$b)use($c){
+    return $a+$b+$c;
+};
+
+
+$list = [1,2,3,4,5];
+function my_func($num){
+    return $num*2;
+}
+function map($array,$func){
+    $new_list = [];
+    foreach ($array as $key=>$item){
+        $new_list[$key] = $func($item);
+    }
+    return $new_list;
+}
+echo map($list,'my_func');
 ?>
 
 <!doctype html>
