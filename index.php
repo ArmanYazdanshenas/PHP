@@ -38,29 +38,26 @@ function func_test_static()
 $sum = function ($a,$b){
     return $a+$b;
 };
-var_dump($sum(4,5));
+//var_dump($sum(4,5));
 
 $c=10;
 $sum = function ($a,$b)use($c){
     return $a+$b+$c;
 };
 
-$list = [1,2,3,4,5,6] ;
-function myfunc($num)
-{
-    return $num*2;
+$list = [1,2,3,4,5];
+function my_func($num){
+    return $num *2;
 }
-
-function map($array,$func):array
-{
+function map($array,$func){
     $new_list = [];
-    foreach ($array as $key=>$item){
-        $new_list[$key]  = $func($item);
+    foreach ($array as $key=>$value){
+        $new_list[$key] = $func($value);
     }
     return $new_list;
 }
+var_dump(map($list,'my_func'));
 
-echo map($list,'myfunc');
 ?>
 
 <!doctype html>
