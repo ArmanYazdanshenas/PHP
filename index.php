@@ -1,10 +1,5 @@
 <?php
-$str = 'arman,yazdanshenas,ardeshir,nour';
-$name_array = explode(',',$str);
-var_dump($name_array);
 
-$new_name_array = implode(',',$name_array);
-var_dump("<br>$new_name_array");
 ?>
 
 <!doctype html>
