@@ -56,7 +56,12 @@ function map($array,$func){
     }
     return $new_list;
 }
-var_dump(map($list,'my_func'));
+var_dump(map($list,fn($num)=>$num*3));
+echo ("<br/>");
+$pi = 3.14;
+
+$sum = fn($num1)=>$num1*2;
+var_dump($sum(5));
 
 ?>
 
