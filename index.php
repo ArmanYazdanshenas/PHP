@@ -12,18 +12,10 @@
     <title>Index Page</title>
 </head>
 <body>
-<form action="/" method="post" style="background-color: bisque">
-    <input type="text" name="username"><br>
-    <input type="email" name="email">
-    <br>
-    <input type="submit" value="Click">
+<form action="upload.php" method="post" style="background-color: bisque" enctype="multipart/form-data">
+    <input type="file" name="file_name">
+    <input type="submit" value="upload">
 </form>
 
-<?php
-    if (isset($_POST['username'])){
-        ?> <h3>
-                <?php echo $_POST['email'] ?>
-           </h3>
-    <?php } ?>
 </body>
 </html>
